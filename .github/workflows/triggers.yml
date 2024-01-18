@@ -4,9 +4,10 @@ on:
     branches:
       - master
       - 'releases/**'
-    pull_request:
-      - master
-      - 'releases/**'
+  pull_request:
+      branches:
+       - master
+       - 'releases/**'
 jobs: 
  basic-workflow:
    runs-on: ubuntu-latest 
