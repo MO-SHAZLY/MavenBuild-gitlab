@@ -1,0 +1,16 @@
+name: github action demo
+on: 
+  push:
+    branches:
+      - master
+      - 'releases/**'
+    pull_request:
+      - master
+      - 'releases/**'
+jobs: 
+ basic-workflow:
+   runs-on: ubuntu-latest 
+   steps:  
+     - name: print some chars
+       run: echo "ITI 44"
+  
