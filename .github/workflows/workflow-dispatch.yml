@@ -1,0 +1,17 @@
+name: manual trigger workflow
+on:
+  workflow_dispatch:
+    inputs:
+      parameter1:
+        description: 'sample parameter'
+        required: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+
+      - name: Print parameters
+        run: |
+          echo "Parameter 1: ${{ github.event.inputs.parameter1 }}"
