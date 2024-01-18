@@ -1,4 +1,4 @@
-name: create basic workflow
+name: github action demo
 on: [push] #actiom which will trigger the workflow, it can be a sinfgle event or array, events: like push , pull , pill request
 jobs: #define  the process which will make up the workflow, each job represent the unit of work that can run independently
  basic-workflow:
