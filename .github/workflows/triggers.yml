@@ -1,4 +1,4 @@
-name: github action demo
+name: trigger action
 on: 
   push:
     branches:
