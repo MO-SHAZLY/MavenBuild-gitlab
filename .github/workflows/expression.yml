@@ -13,4 +13,4 @@ jobs:
         run: exit 1
       - name: check if the previous step is success or failure
         run: echo "running on failure"
-        if: ${{failure() && steps.exec.conclusion == 'failure'}}
+        if: ${{ failure() && steps.exec.conclusion == 'failure' }}
