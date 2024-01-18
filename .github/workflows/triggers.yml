@@ -9,9 +9,9 @@ on:
        - master
        - 'releases/**'
 jobs: 
- basic-workflow:
+ basic-trigger-action:
    runs-on: ubuntu-latest 
    steps:  
-     - name: print some chars
-       run: echo "ITI 44"
+     - name: print msg 
+       run: echo "trigger action"
   
