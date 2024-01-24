@@ -3,7 +3,7 @@ on: [push]
 
 jobs:
   production-deployment:
-    if: github.ref_name= 'master'
+    if: github.ref_name == 'master'
     runs-on: ubuntu-latest
 
     steps:
