@@ -1,4 +1,4 @@
-name: install jdk with maven and cache
+name: java ci with maven and cache
 on:
   workflow_dispatch:
   workflow_call:
@@ -11,13 +11,13 @@ jobs:
     - name: checkout
     - uses: actions/checkout@v3
     - name: setup jdk 11
-    - uses: actions/setup-java@v4.0.0
+    - uses: actions/setup-java@v3
       with:
         java-version: '11'
         distribution: 'jdk'
         cache: maven
     - name: Cache
-    - uses: actions/cache@v4.0.0
+    - uses: actions/cache@v3
       with:
         path: ~/.m2
         key: ${{ runner.os }}-cache
